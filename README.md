@@ -44,7 +44,10 @@ pip install matplotlib
 
 ## Run the command
 
+> Remove existing outputs with correct name for plot.png before running (current name included here to showcase results)
+
 ```bash
+rm plots/lln_for_n_2000.png data/results.csv
 snakemake --cores 1
 ```
 ---
