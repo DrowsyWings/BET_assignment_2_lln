@@ -14,7 +14,7 @@ This project demonstrates the Law of Large Numbers by randomly sampling numbers 
 ## Example Config
 
 ```yaml
-n: 1000
+n: 2000
 
 k_values:
   - 10
