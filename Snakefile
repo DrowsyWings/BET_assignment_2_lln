@@ -1,7 +1,7 @@
 configfile: "config.yaml"
 
 N = config["n"]
-K_VALUES = config["k_values"]
+K_VALS = config["k_values"]
 REPEATS = config["repeats"]
 
 
@@ -14,7 +14,7 @@ rule simulate:
         "data/results.csv"
 
     params:
-        k_values = " ".join([str(x) for x in K_VALUES])
+        k_values = " ".join([str(x) for x in K_VALS])
 
     shell:
         "python scripts/simulate.py --n {N} --repeats {REPEATS} --k_values {params.k_values} --output {output}"
